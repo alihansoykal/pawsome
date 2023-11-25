@@ -184,5 +184,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.1.4-beta"
+  widgets:
+    dependency: "direct main"
+    description:
+      path: "module/widgets"
+      relative: true
+    source: path
+    version: "0.0.1"
 sdks:
   dart: ">=3.1.5 <4.0.0"
+  flutter: ">=1.17.0"
