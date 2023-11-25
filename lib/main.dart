@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:pawsome/product/init/initialization_manager.dart';
 import 'package:pawsome/product/init/localization_manager.dart';
+import 'package:pawsome/product/init/theme/custom_light_theme.dart';
 
 Future<void> main() async {
   await InitializationManager().init();
@@ -14,6 +15,7 @@ class _PawsomeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: CustomLightTheme().themeData,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
