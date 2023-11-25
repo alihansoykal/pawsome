@@ -1,15 +1,15 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:pawsome/product/init/initialization_manager.dart';
 import 'package:pawsome/product/init/localization_manager.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await EasyLocalization.ensureInitialized();
-  runApp(LocalizationManager(child: const PawsomeApp()));
+  await InitializationManager().init();
+  runApp(LocalizationManager(child: const _PawsomeApp()));
 }
 
-class PawsomeApp extends StatelessWidget {
-  const PawsomeApp({super.key});
+class _PawsomeApp extends StatelessWidget {
+  const _PawsomeApp();
 
   @override
   Widget build(BuildContext context) {
