@@ -1,0 +1,26 @@
+{
+    "navigation": {
+        "home": "Home",
+        "settings": "Settings"
+    },
+    "home": {
+        "dialog": {
+            "title": "Breed",
+            "subtitle": "Sub Breed",
+            "generate": "Generate"
+        },
+        "textInput": {
+            "search": "Search",
+            "noResult": "No results found",
+            "tryAgain": "Try searching again with another word"
+        }
+    },
+    "settings": {
+        "help": "Help",
+        "rateUs": "Rate Us",
+        "share": "Share with Friends",
+        "terms": "Terms of Use",
+        "privacy": "Privacy Policy",
+        "version": "OS Version"
+    }
+}
