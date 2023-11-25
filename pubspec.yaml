@@ -32,6 +32,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Galano-Grotesque
+      fonts:
+        - asset: asset/fonts/Galano-Grotesque/GalanoGrotesqueMedium.otf
+        - asset: asset/fonts/Galano-Grotesque/GalanoGrotesqueSemiBold.otf
 
   assets:
     - asset/translation/
