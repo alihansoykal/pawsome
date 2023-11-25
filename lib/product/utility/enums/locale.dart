@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// associated with a `Locale` object. The `Locale` object represents a specific geographical,
 /// political, or cultural region.
 enum Locales {
-  en(Locale('en-US', 'US'));
+  en(Locale('en', 'US'));
 
   final Locale locale;
 
