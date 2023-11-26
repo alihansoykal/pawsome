@@ -1,0 +1,41 @@
+name: gen
+description: A new Flutter package project.
+version: 0.0.1
+homepage: none
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.9
+  json_annotation: ^4.8.1
+  equatable: ^2.0.5
+  envied: ^0.5.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  envied_generator: ^0.5.2
+  build_runner: ^2.4.6
+  flutter_gen_runner: ^5.3.2
+  json_serializable: ^6.7.1
+
+flutter_gen:
+  output: lib/src/asset/
+  integrations:
+    flutter_svg: true
+  
+  colors:
+    inputs:
+      - assets/colors/colors.xml
+
+flutter:
+  assets:
+    - assets/colors/
+    - assets/images/
+    - assets/icons/
