@@ -1,4 +1,4 @@
-import 'package:pawsome/product/init/config/app_configuration.dart';
+import 'package:gen/gen.dart';
 
 final class EnviromentManager {
   EnviromentManager.setup(AppConfiguration appConfiguration) {
