@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:gen/gen.dart';
 import 'package:logger/logger.dart';
 import 'package:pawsome/product/init/config/enviroment_manager.dart';
+import 'package:pawsome/product/state/container/app_state_container.dart';
 
 @immutable
 final class InitializationManager {
@@ -29,5 +30,6 @@ final class InitializationManager {
       Logger().e(details.exceptionAsString());
     };
     EnviromentManager.setup(DevEnv());
+    AppContainer.setup();
   }
 }
