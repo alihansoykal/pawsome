@@ -6,3 +6,13 @@
 ```
 sh scripts/lang.sh
 ```
+
+
+## To use modules after updating it
+
+1. Add related module to pubspec.yaml.
+2. Run the command below.
+
+```
+dart run build_runner build  --delete-conflicting-outputs
+```
