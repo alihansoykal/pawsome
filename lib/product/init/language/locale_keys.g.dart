@@ -1,8 +1,7 @@
 // DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
 
-// ignore_for_file: constant_identifier_names
-
-abstract class LocaleKeys {
+abstract class  LocaleKeys {
+  static const appName = 'appName';
   static const navigation_home = 'navigation.home';
   static const navigation_settings = 'navigation.settings';
   static const navigation = 'navigation';
@@ -22,4 +21,5 @@ abstract class LocaleKeys {
   static const settings_privacy = 'settings.privacy';
   static const settings_version = 'settings.version';
   static const settings = 'settings';
+
 }

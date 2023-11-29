@@ -28,9 +28,17 @@ abstract class _$AppRouter extends RootStackRouter {
       );
     },
     SettingsRoute.name: (routeData) {
+      final args = routeData.argsAs<SettingsRouteArgs>(
+          orElse: () => const SettingsRouteArgs());
       return AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const SettingsView(),
+        child: SettingsView(key: args.key),
+      );
+    },
+    SplashRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const SplashView(),
       );
     },
   };
@@ -66,14 +74,43 @@ class HomeRoute extends PageRouteInfo<void> {
 
 /// generated route for
 /// [SettingsView]
-class SettingsRoute extends PageRouteInfo<void> {
-  const SettingsRoute({List<PageRouteInfo>? children})
-      : super(
+class SettingsRoute extends PageRouteInfo<SettingsRouteArgs> {
+  SettingsRoute({
+    Key? key,
+    List<PageRouteInfo>? children,
+  }) : super(
           SettingsRoute.name,
+          args: SettingsRouteArgs(key: key),
           initialChildren: children,
         );
 
   static const String name = 'SettingsRoute';
+
+  static const PageInfo<SettingsRouteArgs> page =
+      PageInfo<SettingsRouteArgs>(name);
+}
+
+class SettingsRouteArgs {
+  const SettingsRouteArgs({this.key});
+
+  final Key? key;
+
+  @override
+  String toString() {
+    return 'SettingsRouteArgs{key: $key}';
+  }
+}
+
+/// generated route for
+/// [SplashView]
+class SplashRoute extends PageRouteInfo<void> {
+  const SplashRoute({List<PageRouteInfo>? children})
+      : super(
+          SplashRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SplashRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

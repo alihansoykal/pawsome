@@ -24,11 +24,20 @@ class $AssetsColorsGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/ic_arrow.svg
+  SvgGenImage get icArrow => const SvgGenImage('assets/icons/ic_arrow.svg');
+
+  /// File path: assets/icons/ic_back.svg
+  SvgGenImage get icBack => const SvgGenImage('assets/icons/ic_back.svg');
+
   /// File path: assets/icons/ic_help.svg
   SvgGenImage get icHelp => const SvgGenImage('assets/icons/ic_help.svg');
 
   /// File path: assets/icons/ic_home.svg
   SvgGenImage get icHome => const SvgGenImage('assets/icons/ic_home.svg');
+
+  /// File path: assets/icons/ic_homeOff.svg
+  SvgGenImage get icHomeOff => const SvgGenImage('assets/icons/ic_homeOff.svg');
 
   /// File path: assets/icons/ic_logo.svg
   SvgGenImage get icLogo => const SvgGenImage('assets/icons/ic_logo.svg');
@@ -43,6 +52,10 @@ class $AssetsIconsGen {
   SvgGenImage get icSettings =>
       const SvgGenImage('assets/icons/ic_settings.svg');
 
+  /// File path: assets/icons/ic_settingsOff.svg
+  SvgGenImage get icSettingsOff =>
+      const SvgGenImage('assets/icons/ic_settingsOff.svg');
+
   /// File path: assets/icons/ic_share.svg
   SvgGenImage get icShare => const SvgGenImage('assets/icons/ic_share.svg');
 
@@ -54,12 +67,16 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<SvgGenImage> get values => [
+        icArrow,
+        icBack,
         icHelp,
         icHome,
+        icHomeOff,
         icLogo,
         icPolicy,
         icRate,
         icSettings,
+        icSettingsOff,
         icShare,
         icTerms,
         icVersion

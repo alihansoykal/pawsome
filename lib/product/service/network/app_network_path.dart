@@ -2,7 +2,8 @@
 // ignore_for_file: public_member_api_docs
 
 enum AppNetworkPath {
-  breeds('breeds'),
+  // TODO: Refactor paths
+  breeds('breeds/list/all'),
   image('image'),
   images('images'),
   random('breeds/image/random');
