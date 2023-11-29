@@ -8,13 +8,21 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  build_runner: ^2.4.7
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.9
 
+  gen:
+    path: ../gen
+    
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+
+
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

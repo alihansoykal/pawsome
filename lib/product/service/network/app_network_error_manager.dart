@@ -6,7 +6,8 @@ final class AppNetworkErrorManager {
   AppNetworkErrorManager(this.context);
   final BuildContext context;
 
-  void handleError(int value) {
-    if (value == HttpStatus.unauthorized) {}
+  void handleError(int statusCode) {
+    if (statusCode == HttpStatus.unauthorized) {
+    } else if (statusCode == HttpStatus.notFound) {}
   }
 }
