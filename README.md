@@ -1,6 +1,7 @@
 # Pawsome
 Product/Feature based architecture with independent modules.
 
+## Built with
 ### Routing 
   auto_route
 ### State 
@@ -19,9 +20,7 @@ Product/Feature based architecture with independent modules.
 
 
 
-
-
-
+## Just FYI
 
 1. Add pairs to related json file under `asset/translation`.
 2. Run the command below to generate locale keys.
