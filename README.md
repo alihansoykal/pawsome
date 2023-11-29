@@ -21,7 +21,7 @@ Product/Feature based architecture with independent modules.
 
 
 ## Just FYI
-
+To run the app "pub get" is enough.
 ## Adding String Resource
 
 1. Add pairs to related json file under `asset/translation`.
